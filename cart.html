@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d1d6cc37c8.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="bag"><a href="#" class="bag-icon active-link" ><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="#" class="bag-icon" id="cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </nav>
+    </section>
+    <section id="page-header" class="about-header">
+        <div class="hero-text">
+            <h2>Confirm your purchase</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, asperiores!</p>
+        </div>
+    </section>
+    <section id="cart-page">
+        <table class="table" width="100%">
+            <thead>
+                <tr>
+                    <th class="remove-btn">Remove</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="remove-btn" id="remove-btn-1"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="/images/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td class="price">$118.19</td>
+                    <td><input type="number" value="1" class="quantity-input" id="quantity-input-1" min="1"></td>
+                    <td class="subtotal" id="subtotal-1"></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="remove-btn" id="remove-btn-2"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="/images/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td class="price">$78.28</td>
+                    <td><input type="number" value="1" class="quantity-input" id="quantity-input-2" min="1"></td>
+                    <td class="subtotal" id="subtotal-2"></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="remove-btn" id="remove-btn-3"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="/images/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td class="price">$103.65</td>
+                    <td><input type="number" value="1" class="quantity-input" id="quantity-input-3" min="1"></td>
+                    <td class="subtotal" id="subtotal-3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add">
+        <div id="kupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter coupon code 'cara' for 10% discount">
+                <button class="apply-coupon" id="apply-coupon-btn">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Total: <span id="total"></span></h3>
+            <hr>
+            <br>
+            <button>Proceed to checkout</button>
+        </div>
+    </section>
+    <footer>
+        <div class="col">
+            <a href="#"><img src="/images/logo.png" alt=""></a>
+            <h5>Contact</h5>
+            <p><span>Address:</span>563 Wellington Road, Street Road, San Francisco</p>
+            <p><span>Phone:</span>+01 222 /(91) 01 2345 6789</p>
+            <p><span>Hours:</span>10:00 - 18:00 Mon - Sat</p>
+            <div class="social">
+                <h5>Follow Us</h5>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h5>About Us</h5>
+            <a href="#">About</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="col">
+            <h5>My Account</h5>
+            <a href="#">Sing In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col">
+            <h5>Install App</h5>
+            <p>From App or Google Play</p>
+            <div class="imgs">
+                <a href="#"><img src="/images/pay/app.jpg" alt=""></a>
+                <a href="#"><img src="/images/pay/play.jpg" alt=""></a>
+            </div>
+            <p>Secured Payment Gateways </p>
+            <img src="/images/pay/pay.png" alt="">
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
